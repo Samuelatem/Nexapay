@@ -1,16 +1,4 @@
 # Phase 2, Test Strategy and Plan
-
-**Product:** NexaPay · **Release:** pre-public-exposure (next quarter)
-**Author:** Samuel, QA Automation Senior · **Date:** 15 August 2026 · **v1.0**
-
-> This strategy is deliberately narrow. Six risks in the Phase 1 matrix score
-> ≥ 20 and five of those six are security or financial integrity. Effort follows
-> that distribution: the API boundary gets the investment, the UI gets what it
-> uniquely proves, and several conventionally-expected areas are consciously
-> left uncovered with the reasoning stated.
-
----
-
 ## 1. Quality objectives and targets
 
 Objectives are expressed as things that can be *measured and refuted*. "Improve

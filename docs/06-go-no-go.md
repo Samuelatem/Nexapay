@@ -1,8 +1,4 @@
 # Go / No-Go recommendation
-
-NexaPay, release/1.4.0, before public exposure
-Samuel — 15 August 2026, v2 (revised after live verification)
-
 ## Recommendation: No-Go
 
 Not because the API is insecure. That turned out to be the test fixture. Because

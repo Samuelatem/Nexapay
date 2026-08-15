@@ -1,13 +1,5 @@
 # Phase 1, Context Analysis and Framing
-
-**Product:** NexaPay, internal fintech operations dashboard
-**Author:** Samuel, QA Automation Senior (technical assessment)
-**Date:** 15 August 2026 · **Version:** 1.0
-**Environment under test:** `http://149.56.128.57:3200` (demo)
-
----
-
-## 1. Product synthesis, in my own words
+ ## 1. Product synthesis, in my own words
 
 NexaPay is an **internal back-office console for a payments operation**. Three
 roles, Admin, Manager, Member, sign in to read a transaction ledger, watch a

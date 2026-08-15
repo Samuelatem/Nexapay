@@ -1,13 +1,5 @@
 # Annexe K, Questions to the Product Owner
 
-**One grouped salvo · 5 questions · Samuel, QA Automation Senior · 15/08/2026**
-
-Each question is tied to a decision I cannot make alone, and each states what
-changes in my strategy depending on the answer. "Not documented, assume it" is
-an acceptable answer; I will log the assumption and continue.
-
----
-
 **Q1, Is `Idempotency-Key` mandatory on `POST /transfers`, and is
 deduplication server-side?**
 

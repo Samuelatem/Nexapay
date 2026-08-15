@@ -2,21 +2,7 @@
 
 **Annexes F–I, plus my own execution evidence**
 Samuel, QA Automation Senior · 15 August 2026 · v1.0
-
-> **⚠️ Revised 15/08/2026 after live verification.** A browser pass established
-> that the demonstration backend is a `json-server` fixture, which re-attributes
-> six of the findings below from *product defect* to *environment artefact*, and
-> hardens four new ones into Critical product defects. The classification table
-> in §1 is superseded by `docs/08-live-verification.md` §7. The analysis of
-> Annexes F–I is unaffected and stands as written.
->
-> The brief warns that some of the supplied data reveals anomalies and some does
-> not. Distinguishing the two is the exercise. Below, each observation is
-> classified as **product defect**, **test defect**, **data problem**, or
-> **environment problem**, and where the classification cannot be made with the
-> evidence available, I say so and state what would settle it.
-
----
+ 
 
 ## Part 1, Classification summary
 

@@ -1,20 +1,4 @@
 # Phase 3, Test Design
-
-**10 prioritised scenarios for the critical journeys**
-Samuel, QA Automation Senior · 15 August 2026 · v1.0
-
-> The brief asks for relevance, not exhaustiveness. Each scenario below is here
-> because it closes a specific risk from the Phase 1 matrix. Where I could have
-> written five variations of the same idea, I wrote one and moved to a different
-> failure mode.
->
-> **Minimum required:** 5 high-priority scenarios across ≥ 3 critical journeys.
-> **Delivered:** 6 P1 scenarios across 4 critical journeys (J1 Transfer,
-> J2 Authentication, J3 Ledger, J4 Administration), 39 concrete test cases,
-> of which **21 are negative or boundary**.
-
----
-
 ## Coverage at a glance
 
 | Journey | Scenarios | P1 | Negative/boundary cases |
