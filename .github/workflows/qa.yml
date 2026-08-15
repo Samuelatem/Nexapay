@@ -1,0 +1,133 @@
+name: NexaPay QA
+
+# Quality gates, in order of cost:
+#   1. typecheck + API suite      — every push, ~1 min, BLOCKS the merge
+#   2. E2E critical journey       — merge to main + nightly, ~5 min
+# Rationale in docs/02-test-strategy.md, "Automation strategy & CI".
+
+on:
+  push:
+    branches: [main, 'release/**']
+  pull_request:
+  schedule:
+    - cron: '0 5 * * 1-5'   # 05:00 UTC on weekdays, before the business day
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'live or recorded'
+        default: 'live'
+        type: choice
+        options: [live, recorded]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # Gate 1 — fast, deterministic, no browser. This is the one that blocks.
+  # ---------------------------------------------------------------------------
+  api:
+    name: API suite (blocking gate)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Run API suite
+        env:
+          # Secrets never appear in the repository. `.env` is git-ignored and
+          # CI reads from the encrypted store; a fork PR gets no credentials and
+          # the job fails loudly rather than running against nothing.
+          TEST_MODE: ${{ inputs.mode || 'live' }}
+          NEXAPAY_BASE_URL: ${{ secrets.NEXAPAY_BASE_URL }}
+          NEXAPAY_API_URL: ${{ secrets.NEXAPAY_API_URL }}
+          NEXAPAY_ADMIN_EMAIL: ${{ secrets.NEXAPAY_ADMIN_EMAIL }}
+          NEXAPAY_ADMIN_PASSWORD: ${{ secrets.NEXAPAY_ADMIN_PASSWORD }}
+          NEXAPAY_MANAGER_EMAIL: ${{ secrets.NEXAPAY_MANAGER_EMAIL }}
+          NEXAPAY_MANAGER_PASSWORD: ${{ secrets.NEXAPAY_MANAGER_PASSWORD }}
+          NEXAPAY_MEMBER_EMAIL: ${{ secrets.NEXAPAY_MEMBER_EMAIL }}
+          NEXAPAY_MEMBER_PASSWORD: ${{ secrets.NEXAPAY_MEMBER_PASSWORD }}
+          NEXAPAY_TEST_PIN: ${{ secrets.NEXAPAY_TEST_PIN }}
+          TEST_RUN_ID: gh-${{ github.run_id }}
+        run: npm run test:api
+
+      - name: Publish report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-report-${{ github.run_id }}
+          path: evidence/
+          retention-days: 30
+
+      - name: Surface results in the PR
+        if: always()
+        uses: dorny/test-reporter@v1
+        with:
+          name: API results
+          path: evidence/junit.xml
+          reporter: java-junit
+          fail-on-error: false
+
+  # ---------------------------------------------------------------------------
+  # Gate 2 — browser-backed. Slower and inherently flakier, so it does not
+  # block a PR; it blocks a release.
+  # ---------------------------------------------------------------------------
+  e2e:
+    name: E2E critical journey
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    needs: api
+    if: github.event_name == 'schedule' || github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+
+      - name: Run E2E + consistency suites
+        env:
+          TEST_MODE: live
+          NEXAPAY_BASE_URL: ${{ secrets.NEXAPAY_BASE_URL }}
+          NEXAPAY_API_URL: ${{ secrets.NEXAPAY_API_URL }}
+          NEXAPAY_ADMIN_EMAIL: ${{ secrets.NEXAPAY_ADMIN_EMAIL }}
+          NEXAPAY_ADMIN_PASSWORD: ${{ secrets.NEXAPAY_ADMIN_PASSWORD }}
+          NEXAPAY_MANAGER_EMAIL: ${{ secrets.NEXAPAY_MANAGER_EMAIL }}
+          NEXAPAY_MANAGER_PASSWORD: ${{ secrets.NEXAPAY_MANAGER_PASSWORD }}
+          NEXAPAY_MEMBER_EMAIL: ${{ secrets.NEXAPAY_MEMBER_EMAIL }}
+          NEXAPAY_MEMBER_PASSWORD: ${{ secrets.NEXAPAY_MEMBER_PASSWORD }}
+          NEXAPAY_TEST_PIN: ${{ secrets.NEXAPAY_TEST_PIN }}
+          TEST_RUN_ID: gh-${{ github.run_id }}
+        run: npx playwright test --project=e2e --project=consistency
+
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-report-${{ github.run_id }}
+          path: evidence/
+          retention-days: 30
+
+  # ---------------------------------------------------------------------------
+  # Gate 0 — no credential may ever be committed. Runs on every push, seconds.
+  # ---------------------------------------------------------------------------
+  secret-scan:
+    name: Secret scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Secrets. Never commit these.
+.env
+.env.*
+!.env.example
+
+# Playwright scratch
+test-results/
+playwright-report/
+
+# Traces are large and only useful locally. Reports and screenshots ARE
+# committed on purpose, so a reviewer can see the evidence without running
+# anything.
+evidence/traces/
+
+*.log
+.DS_Store
+Thumbs.db

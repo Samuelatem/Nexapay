@@ -1,0 +1,28 @@
+{
+  "name": "nexapay-qa-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NexaPay — QA Automation Senior technical assessment. Risk-based API + E2E suite.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test --project=api",
+    "test:e2e": "playwright test --project=e2e",
+    "test:contract": "playwright test --grep @contract",
+    "test:smoke": "playwright test --grep @smoke",
+    "evidence": "playwright test visual-evidence --project=e2e",
+    "mock": "node tools/mock-server.mjs",
+    "test:mock": "cross-env-shell node tools/run-with-mock.mjs",
+    "report": "playwright show-report evidence/html-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "dotenv": "^16.4.7",
+    "typescript": "^5.7.2"
+  }
+}

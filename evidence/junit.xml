@@ -1,0 +1,65 @@
+<testsuites id="" name="" tests="7" failures="0" skipped="6" errors="1" time="25.123264">
+<testsuite name="e2e\visual-evidence.spec.ts" timestamp="2026-08-15T12:18:23.486Z" hostname="e2e" tests="7" failures="0" skipped="6" time="6.892" errors="1">
+<testcase name="Visual evidence @evidence › 01 — login screen" classname="e2e\visual-evidence.spec.ts" time="6.892">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|traces\visual-evidence-Visual-evidence-evidence-01-—-login-screen-e2e\attachments\01-login-339bc5012a52756aa899905dc21079d3cc3d2dfb.png]]
+
+[[ATTACHMENT|traces\visual-evidence-Visual-evidence-evidence-01-—-login-screen-e2e\test-finished-1.png]]
+
+[[ATTACHMENT|traces\visual-evidence-Visual-evidence-evidence-01-—-login-screen-e2e\error-context.md]]
+
+[[ATTACHMENT|traces\visual-evidence-Visual-evidence-evidence-01-—-login-screen-e2e\trace.zip]]
+]]>
+</system-out>
+<error message="browserContext.close: spawn UNKNOWN" type="Error">
+<![CDATA[  [e2e] › e2e\visual-evidence.spec.ts:44:3 › Visual evidence @evidence › 01 — login screen ─────────
+
+    Error: browserContext.close: spawn UNKNOWN
+
+    attachment #1: 01-login (image/png) ────────────────────────────────────────────────────────────
+    ..\evidence\traces\visual-evidence-Visual-evidence-evidence-01-—-login-screen-e2e\attachments\01-login-339bc5012a52756aa899905dc21079d3cc3d2dfb.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\evidence\traces\visual-evidence-Visual-evidence-evidence-01-—-login-screen-e2e\test-finished-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\evidence\traces\visual-evidence-Visual-evidence-evidence-01-—-login-screen-e2e\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\evidence\traces\visual-evidence-Visual-evidence-evidence-01-—-login-screen-e2e\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\evidence\traces\visual-evidence-Visual-evidence-evidence-01-—-login-screen-e2e\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+<testcase name="Visual evidence @evidence › 02 — dashboard, with the KPI figures recorded" classname="e2e\visual-evidence.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Visual evidence @evidence › 03 — transactions list and its balance" classname="e2e\visual-evidence.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Visual evidence @evidence › 04 — status filters, one screenshot each" classname="e2e\visual-evidence.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Visual evidence @evidence › 05 — transfer form, empty and with validation errors" classname="e2e\visual-evidence.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Visual evidence @evidence › 06 — role based access, one screenshot per role" classname="e2e\visual-evidence.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Visual evidence @evidence › 07 — member is bounced off the admin route" classname="e2e\visual-evidence.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

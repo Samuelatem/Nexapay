@@ -1,0 +1,17 @@
+[
+  {"id":"tx-001","date":"2025-07-01","description":"Wire Transfer to Sarah","subLabel":"Monthly rent","category":"transfer","amount":-2500,"status":"completed","recipientId":"c1","createdAt":"2025-07-01T09:15:00Z"},
+  {"id":"tx-002","date":"2025-07-02","description":"Salary Deposit","subLabel":"Acme Corp payroll","category":"payment","amount":5200,"status":"completed","recipientId":null,"createdAt":"2025-07-02T08:00:00Z"},
+  {"id":"tx-003","date":"2025-07-03","description":"Refund — Online Purchase","subLabel":"Order #8834","category":"refund","amount":89.99,"status":"completed","recipientId":null,"createdAt":"2025-07-03T14:22:00Z"},
+  {"id":"tx-004","date":"2025-07-05","description":"ATM Withdrawal","subLabel":"Downtown branch","category":"withdrawal","amount":-200,"status":"completed","recipientId":null,"createdAt":"2025-07-05T11:30:00Z"},
+  {"id":"tx-005","date":"2025-07-06","description":"Payment to James Osei","subLabel":"Consulting fee","category":"transfer","amount":-1750,"status":"pending","recipientId":"c2","createdAt":"2025-07-06T16:45:00Z"},
+  {"id":"tx-006","date":"2025-07-08","description":"Subscription — CloudStack","subLabel":"Annual plan","category":"payment","amount":-499,"status":"completed","recipientId":null,"createdAt":"2025-07-08T10:00:00Z"},
+  {"id":"tx-007","date":"2025-07-10","description":"Refund — Flight Booking","subLabel":"Ref #AF2291","category":"refund","amount":342.5,"status":"pending","recipientId":null,"createdAt":"2025-07-10T13:15:00Z"},
+  {"id":"tx-008","date":"2025-07-11","description":"Wire Transfer to Lina","subLabel":"Project milestone","category":"transfer","amount":-3200,"status":"completed","recipientId":"c3","createdAt":"2025-07-11T09:30:00Z"},
+  {"id":"tx-009","date":"2025-07-12","description":"Grocery Payment","subLabel":"FreshMart","category":"payment","amount":-127.85,"status":"completed","recipientId":null,"createdAt":"2025-07-12T17:20:00Z"},
+  {"id":"tx-010","date":"2025-07-14","description":"ATM Withdrawal","subLabel":"Airport branch","category":"withdrawal","amount":-500,"status":"failed","recipientId":null,"createdAt":"2025-07-14T06:45:00Z"},
+  {"id":"tx-011","date":"2025-07-15","description":"Freelance Income","subLabel":"Design work","category":"payment","amount":2800,"status":"completed","recipientId":null,"createdAt":"2025-07-15T12:00:00Z"},
+  {"id":"tx-012","date":"2025-07-17","description":"Transfer to Sarah Chen","subLabel":"Gift","category":"transfer","amount":-150,"status":"failed","recipientId":"c1","createdAt":"2025-07-17T15:30:00Z"},
+  {"id":"tx-013","date":"2025-07-18","description":"Insurance Refund","subLabel":"Policy #INS-442","category":"refund","amount":620,"status":"completed","recipientId":null,"createdAt":"2025-07-18T10:10:00Z"},
+  {"id":"tx-014","date":"2025-07-20","description":"Utility Payment","subLabel":"Electric bill","category":"payment","amount":-215.3,"status":"pending","recipientId":null,"createdAt":"2025-07-20T08:55:00Z"},
+  {"id":"tx-015","date":"2025-07-22","description":"ATM Withdrawal","subLabel":"Mall branch","category":"withdrawal","amount":-300,"status":"completed","recipientId":null,"createdAt":"2025-07-22T14:40:00Z"}
+]

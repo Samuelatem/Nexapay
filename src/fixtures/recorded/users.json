@@ -1,0 +1,5 @@
+[
+  {"id":"u1","name":"Amara Kofi","email":"admin@nexapay.test","role":"ADMIN","avatarInitials":"AK"},
+  {"id":"u2","name":"Fatou Diallo","email":"manager@nexapay.test","role":"MANAGER","avatarInitials":"FD"},
+  {"id":"u3","name":"Kwame Mensah","email":"member@nexapay.test","role":"MEMBER","avatarInitials":"KM"}
+]
