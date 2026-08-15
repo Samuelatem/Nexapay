@@ -121,12 +121,12 @@
         {
           "title": "Visual evidence @evidence",
           "file": "e2e/visual-evidence.spec.ts",
-          "line": 43,
+          "line": 45,
           "column": 6,
           "specs": [
             {
               "title": "01 — login screen",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "evidence"
               ],
@@ -141,21 +141,13 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 6892,
-                      "error": {
-                        "message": "Error: browserContext.close: spawn UNKNOWN",
-                        "stack": "Error: browserContext.close: spawn UNKNOWN"
-                      },
-                      "errors": [
-                        {
-                          "message": "Error: browserContext.close: spawn UNKNOWN"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 7402,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-15T12:18:27.035Z",
+                      "startTime": "2026-08-15T12:46:09.813Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -167,26 +159,16 @@
                           "name": "screenshot",
                           "contentType": "image/png",
                           "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evidence-evidence-01-—-login-screen-e2e\\test-finished-1.png"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evidence-evidence-01-—-login-screen-e2e\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evidence-evidence-01-—-login-screen-e2e\\trace.zip"
                         }
                       ]
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "42834b34c0a3fd5ff2d5-36754dfd7e059cd3e071",
               "file": "e2e/visual-evidence.spec.ts",
-              "line": 44,
+              "line": 46,
               "column": 3
             },
             {
@@ -204,25 +186,41 @@
                   "projectName": "e2e",
                   "results": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15325,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-15T12:18:45.899Z",
+                      "startTime": "2026-08-15T12:46:25.173Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "02-dashboard",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-ddcf8-th-the-KPI-figures-recorded-e2e\\attachments\\02-dashboard-fc7ef9908915c94c843f2082a59e62a4171fab4a.png"
+                        },
+                        {
+                          "name": "dashboard-vs-ledger",
+                          "contentType": "application/json",
+                          "body": "ewogICJmaWd1cmVzT25TY3JlZW4iOiBbCiAgICAiJDIsNzExLjUwIiwKICAgICIkMTIsNzUwLjAwIiwKICAgICIkOCw0MjAuMDAiCiAgXSwKICAibGVkZ2VyQWxsU3RhdHVzZXMiOiAiLSQ1MSwzOTIuMTYiLAogICJsZWRnZXJDb21wbGV0ZWRPbmx5IjogIiQxLDg4My4xNCIsCiAgImxlZGdlckluY29tZSI6ICIkOSwwNTIuNDkiLAogICJsZWRnZXJFeHBlbnNlcyI6ICItJDYwLDQ0NC42NSIsCiAgInJlY29yZENvdW50IjogMjEKfQ=="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-ddcf8-th-the-KPI-figures-recorded-e2e\\test-finished-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "status": "skipped"
+                  "status": "expected"
                 }
               ],
               "id": "42834b34c0a3fd5ff2d5-5dbae53bc630946eeb75",
               "file": "e2e/visual-evidence.spec.ts",
-              "line": 51,
+              "line": 53,
               "column": 3
             },
             {
@@ -240,25 +238,41 @@
                   "projectName": "e2e",
                   "results": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9884,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-15T12:18:45.936Z",
+                      "startTime": "2026-08-15T12:46:40.560Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "03-transactions",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-e9703-ctions-list-and-its-balance-e2e\\attachments\\03-transactions-fa9229117312f344c24cf5c5b45e3152257454c4.png"
+                        },
+                        {
+                          "name": "transactions-screen-state",
+                          "contentType": "application/json",
+                          "body": "ewogICJiYWxhbmNlU2hvd24iOiAiJDUwLDU2My44MCIsCiAgInJvd3NPblBhZ2UiOiA1LAogICJwYWdpbmF0aW9uIjogIlBhZ2UgMSBvZiA1Igp9"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-e9703-ctions-list-and-its-balance-e2e\\test-finished-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "status": "skipped"
+                  "status": "expected"
                 }
               ],
               "id": "42834b34c0a3fd5ff2d5-ca05c152146036ac4d24",
               "file": "e2e/visual-evidence.spec.ts",
-              "line": 80,
+              "line": 82,
               "column": 3
             },
             {
@@ -276,25 +290,56 @@
                   "projectName": "e2e",
                   "results": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16565,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-15T12:18:45.982Z",
+                      "startTime": "2026-08-15T12:46:50.487Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "04-filter-all",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-64160-filters-one-screenshot-each-e2e\\attachments\\04-filter-all-d20e9880b4ad6871d2686d0b3fd75d33ee2040ed.png"
+                        },
+                        {
+                          "name": "04-filter-completed",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-64160-filters-one-screenshot-each-e2e\\attachments\\04-filter-completed-72a42948616c01b1f7f3aadf575af22c06a32f5c.png"
+                        },
+                        {
+                          "name": "04-filter-pending",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-64160-filters-one-screenshot-each-e2e\\attachments\\04-filter-pending-5de3592fee0a8adae7c1f4c9cda975126f1a4e97.png"
+                        },
+                        {
+                          "name": "04-filter-failed",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-64160-filters-one-screenshot-each-e2e\\attachments\\04-filter-failed-abb752948d7057b17ab9bcad01093195941e4db8.png"
+                        },
+                        {
+                          "name": "filter-behaviour",
+                          "contentType": "application/json",
+                          "body": "ewogICJhbGwiOiB7CiAgICAicm93cyI6IDUsCiAgICAiYmFsYW5jZSI6ICIkNTAsNTYzLjgwIiwKICAgICJwYWdlcyI6ICJQYWdlIDEgb2YgNSIKICB9LAogICJjb21wbGV0ZWQiOiB7CiAgICAicm93cyI6IDUsCiAgICAiYmFsYW5jZSI6ICIkNTAsNTYzLjgwIiwKICAgICJwYWdlcyI6ICJQYWdlIDEgb2YgMiIKICB9LAogICJwZW5kaW5nIjogewogICAgInJvd3MiOiA1LAogICAgImJhbGFuY2UiOiAiJDUwLDU2My44MCIsCiAgICAicGFnZXMiOiAiUGFnZSAxIG9mIDIiCiAgfSwKICAiZmFpbGVkIjogewogICAgInJvd3MiOiAyLAogICAgImJhbGFuY2UiOiAiJDUwLDU2My44MCIsCiAgICAicGFnZXMiOiAiUGFnZSAxIG9mIDEiCiAgfQp9"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-64160-filters-one-screenshot-each-e2e\\test-finished-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "status": "skipped"
+                  "status": "expected"
                 }
               ],
               "id": "42834b34c0a3fd5ff2d5-12542966df7803c0eb21",
               "file": "e2e/visual-evidence.spec.ts",
-              "line": 100,
+              "line": 102,
               "column": 3
             },
             {
@@ -312,30 +357,46 @@
                   "projectName": "e2e",
                   "results": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12679,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-15T12:18:46.033Z",
+                      "startTime": "2026-08-15T12:47:07.116Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "05-transfer-empty",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-2fb20--and-with-validation-errors-e2e\\attachments\\05-transfer-empty-917162184c8335776d1bbf16005afb57ab895b5c.png"
+                        },
+                        {
+                          "name": "06-transfer-validation-errors",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-2fb20--and-with-validation-errors-e2e\\attachments\\06-transfer-validation-errors-18f31a6d49a41540dd7e2c3e9d01e36225a0ea5c.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-2fb20--and-with-validation-errors-e2e\\test-finished-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "status": "skipped"
+                  "status": "expected"
                 }
               ],
               "id": "42834b34c0a3fd5ff2d5-dc310da73a6035dcf121",
               "file": "e2e/visual-evidence.spec.ts",
-              "line": 130,
+              "line": 132,
               "column": 3
             },
             {
               "title": "06 — role based access, one screenshot per role",
-              "ok": true,
+              "ok": false,
               "tags": [
                 "evidence"
               ],
@@ -348,25 +409,138 @@
                   "projectName": "e2e",
                   "results": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 24091,
+                      "error": {
+                        "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Enter your email')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Enter your email')\u001b[22m\n\n    at LoginPage.signIn (C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\src\\pages\\login.page.ts:41:22)\n    at C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\tests\\e2e\\visual-evidence.spec.ts:161:19",
+                        "location": {
+                          "file": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\src\\pages\\login.page.ts",
+                          "column": 22,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\pages\\login.page.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m   \u001b[36masync\u001b[39m signIn(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39memail\u001b[33m.\u001b[39mfill(email)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpassword\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmit\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\src\\pages\\login.page.ts",
+                            "column": 22,
+                            "line": 41
+                          },
+                          "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Enter your email')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\pages\\login.page.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m   \u001b[36masync\u001b[39m signIn(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39memail\u001b[33m.\u001b[39mfill(email)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpassword\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmit\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m   }\u001b[0m\n\u001b[2m    at LoginPage.signIn (C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\src\\pages\\login.page.ts:41:22)\u001b[22m\n\u001b[2m    at C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\tests\\e2e\\visual-evidence.spec.ts:161:19\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-15T12:18:46.062Z",
+                      "startTime": "2026-08-15T12:47:20.113Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "07-role-admin",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-eb052-ess-one-screenshot-per-role-e2e\\attachments\\07-role-admin-fa79e700a2e03f1797ae4e62a944ad526d63d8fb.png"
+                        },
+                        {
+                          "name": "role-admin-navigation",
+                          "contentType": "application/json",
+                          "body": "ewogICJyb2xlIjogImFkbWluIiwKICAiYWRtaW5MaW5rVmlzaWJsZSI6IHRydWUsCiAgInVzZXJDaGlwIjogIkFLXG5cbkFtYXJhIEtvZmlcblxuQWRtaW4iCn0="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-eb052-ess-one-screenshot-per-role-e2e\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-eb052-ess-one-screenshot-per-role-e2e\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-eb052-ess-one-screenshot-per-role-e2e\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\src\\pages\\login.page.ts",
+                        "column": 22,
+                        "line": 41
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 17262,
+                      "error": {
+                        "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Enter your email')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Enter your email')\u001b[22m\n\n    at LoginPage.signIn (C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\src\\pages\\login.page.ts:41:22)\n    at C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\tests\\e2e\\visual-evidence.spec.ts:161:19",
+                        "location": {
+                          "file": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\src\\pages\\login.page.ts",
+                          "column": 22,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\pages\\login.page.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m   \u001b[36masync\u001b[39m signIn(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39memail\u001b[33m.\u001b[39mfill(email)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpassword\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmit\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\src\\pages\\login.page.ts",
+                            "column": 22,
+                            "line": 41
+                          },
+                          "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Enter your email')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\pages\\login.page.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m\n \u001b[90m 40 |\u001b[39m   \u001b[36masync\u001b[39m signIn(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39memail\u001b[33m.\u001b[39mfill(email)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpassword\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmit\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m   }\u001b[0m\n\u001b[2m    at LoginPage.signIn (C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\src\\pages\\login.page.ts:41:22)\u001b[22m\n\u001b[2m    at C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\tests\\e2e\\visual-evidence.spec.ts:161:19\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-08-15T12:47:51.188Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "07-role-admin",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-eb052-ess-one-screenshot-per-role-e2e-retry1\\attachments\\07-role-admin-fa79e700a2e03f1797ae4e62a944ad526d63d8fb.png"
+                        },
+                        {
+                          "name": "role-admin-navigation",
+                          "contentType": "application/json",
+                          "body": "ewogICJyb2xlIjogImFkbWluIiwKICAiYWRtaW5MaW5rVmlzaWJsZSI6IHRydWUsCiAgInVzZXJDaGlwIjogIkFLXG5cbkFtYXJhIEtvZmlcblxuQWRtaW4iCn0="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-eb052-ess-one-screenshot-per-role-e2e-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-eb052-ess-one-screenshot-per-role-e2e-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-eb052-ess-one-screenshot-per-role-e2e-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\src\\pages\\login.page.ts",
+                        "column": 22,
+                        "line": 41
+                      }
                     }
                   ],
-                  "status": "skipped"
+                  "status": "unexpected"
                 }
               ],
               "id": "42834b34c0a3fd5ff2d5-070478972702404a014c",
               "file": "e2e/visual-evidence.spec.ts",
-              "line": 151,
+              "line": 153,
               "column": 3
             },
             {
@@ -384,25 +558,36 @@
                   "projectName": "e2e",
                   "results": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12423,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-15T12:18:46.088Z",
+                      "startTime": "2026-08-15T12:48:20.316Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "08-member-blocked-from-admin",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-cb94e-bounced-off-the-admin-route-e2e\\attachments\\08-member-blocked-from-admin-192e9f45e394a7c2c8691e26a0f074ca09634f4c.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\GOLD COMPUTERS\\Desktop\\NexaPay-QA-Samuel\\evidence\\traces\\visual-evidence-Visual-evi-cb94e-bounced-off-the-admin-route-e2e\\test-finished-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "status": "skipped"
+                  "status": "expected"
                 }
               ],
               "id": "42834b34c0a3fd5ff2d5-8d74cd2913c87b96f3a6",
               "file": "e2e/visual-evidence.spec.ts",
-              "line": 174,
+              "line": 176,
               "column": 3
             }
           ]
@@ -412,10 +597,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-15T12:18:21.060Z",
-    "duration": 25123.264,
-    "expected": 0,
-    "skipped": 6,
+    "startTime": "2026-08-15T12:45:58.627Z",
+    "duration": 167023.005,
+    "expected": 6,
+    "skipped": 0,
     "unexpected": 1,
     "flaky": 0
   }
